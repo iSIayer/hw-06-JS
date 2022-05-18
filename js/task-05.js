@@ -6,7 +6,6 @@ const refs = {
 refs.nameInput.addEventListener('input', () => {
     const DEFAULT_NAME = 'Anonymous';
     refs.nameOutput.textContent = refs.nameInput.value;
-    
-    return refs.nameOutput.textContent === '' ? refs.nameOutput.textContent = DEFAULT_NAME : refs.nameOutput.textContent;
+    refs.nameOutput.textContent === '' ? refs.nameOutput.textContent = DEFAULT_NAME : refs.nameOutput.textContent;
 }
 );

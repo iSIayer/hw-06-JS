@@ -1,8 +1,11 @@
 const refs = {
-  input: document.querySelector("#font-size-control"),
-  text: document.querySelector("#text"),
+  inputSizeControl: document.querySelector('#font-size-control'),
+  textSpan: document.querySelector('#text'),
 };
 
-function setFontSize(e) {
-  refs.text.style.fontSize = `${e.currentTarget.value}px`;
-}
+refs.inputSizeControl.addEventListener('input', setFontSize)
+
+function setFontSize(event) {
+  const fontSizeValue = Number(event.currentTarget.value);
+  refs.textSpan.style.fontSize = `${fontSizeValue}px`;
+};
