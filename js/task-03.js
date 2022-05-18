@@ -47,3 +47,4 @@ gallery.style.backgroundColor = "palevioletred";
 
 
 
+
